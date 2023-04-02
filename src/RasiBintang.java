@@ -4,7 +4,7 @@ import java.util.List;
 public class RasiBintang {
     private List<Bintang> bintangList;
 
-    public RasiBintang() {
+    public void generate() {
         bintangList = new ArrayList<>();
         //Tambahkan bintang-bintang yang diperlukan
         bintangList.add(new Bintang(1, 4, 0, "Capricorn"));
@@ -23,7 +23,7 @@ public class RasiBintang {
 
     public Bintang findBintang(int besar, int kecil, int nodeLepas) {
         for (Bintang bintang : bintangList) {
-            if (bintang.getBesar() == besar && bintang.getKecil() == kecil && bintang.getNodeLepas() == nodeLepas) {
+            if (bintang.getBintangBesar() == besar && bintang.getBintangKecil() == kecil && bintang.getNodeLepas() == nodeLepas) {
                 return bintang;
             }
         }

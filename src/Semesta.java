@@ -1,12 +1,12 @@
-public class Semesta {
+public class Semesta extends RasiBintang {
     private RasiBintang rasiBintang;
 
     public Semesta(RasiBintang rasiBintang) {
         this.rasiBintang = rasiBintang;
     }
 
-    public String findRasiBintang(int besar, int kecil, int nodeLepas) {
-        Bintang bintang = rasiBintang.findBintang(besar, kecil, nodeLepas);
+    public String findRasiBintang(int BintangBesar, int BintangKecil, int nodeLepas) {
+        Bintang bintang = rasiBintang.findBintang(BintangBesar, BintangKecil, nodeLepas);
         if (bintang != null) {
             return bintang.getNama();
         } else {

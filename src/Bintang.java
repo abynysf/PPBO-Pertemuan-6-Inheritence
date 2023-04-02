@@ -11,11 +11,11 @@ public class Bintang {
         this.nama = nama;
     }
 
-    public int getBesar() {
+    public int getBintangBesar() {
         return besar;
     }
 
-    public int getKecil() {
+    public int getBintangKecil() {
         return kecil;
     }
 
